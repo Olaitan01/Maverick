@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(243, 242, 243);
+}
+
+header {
+  width: 100%;
+}
+header .header-top {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+header .header-top .logo {
+  width: 80%;
+  max-width: 100%;
+  mix-blend-mode: normal;
+}
+header .header-top nav {
+  display: flex;
+  align-items: center;
+}
+header .header-top nav a {
+  color: black;
+  text-decoration: none;
+  padding: 0 0.7rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header .header-top nav a:hover {
+  text-decoration: line-through;
+}
+header .header-top nav .dot {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
+header .header-top .header-right {
+  display: flex;
+}
+header .header-top .header-right span {
+  padding: 0 0.2rem;
+}
+header .header-top .header-right span img {
+  max-width: 80%;
+}
+header .header-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+header .header-hero .hero-1 {
+  grid-row: 1/span 3;
+  position: relative;
+}
+header .header-hero .hero-1 img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+header .header-hero .hero-1 .enquiry {
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  display: flex;
+}
+header .header-hero .hero-1 .enquiry span {
+  border: 0.1rem solid white;
+  color: white;
+  border-radius: 1rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;
+}
+header .header-hero .hero-1 .enquiry span img {
+  width: 100%;
+  padding: 0.1rem;
+}
+header .header-hero .hero-1 .enquiry span .mail {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+header .header-hero .hero-1 .enquiry span .learn {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+header .header-hero .hero-1 .enquiry .learn-more {
+  background-color: black;
+  border: 1px solid black;
+}
+header .header-hero .hero-2 {
+  width: 100%;
+  height: 53vh;
+  padding: 0.2rem;
+  text-align: center;
+  grid-column: 2/span 4;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(170, 170, 168);
+  background-color: rgb(170, 170, 168);
+  text-align: left;
+}
+header .header-hero .hero-2 h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 0.5rem;
+}
+header .header-hero .hero-2 p {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 4rem 0.5rem;
+}
+header .header-hero .hero-3 {
+  border-radius: 1rem;
+  position: relative;
+}
+header .header-hero .hero-3 img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  filter: brightness(50%);
+}
+header .header-hero .hero-3 span {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  color: white;
+  font-weight: 400;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+header .header-hero .hero-4 {
+  position: relative;
+  border-radius: 1rem;
+}
+header .header-hero .hero-4 img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  filter: brightness(50%);
+}
+header .header-hero .hero-4 span {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  color: white;
+  font-weight: 400;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+main .content-1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding: 1rem;
+}
+main .content-1 .classic {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+}
+main .content-2 {
+  margin-bottom: 0.5rem;
+}
+main .content-2 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 0.5rem;
+}
+main .content-2 .winter-col {
+  background-color: black;
+  border-radius: 0.1rem solid black;
+  color: white;
+}
+main .content-2 span {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  display: inline-block;
+  margin: 0.2rem;
+}
+main .content-2 span .sub {
+  font-size: 1rem;
+  border-radius: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+main .content-3 .item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+main .content-3 .item div {
+  margin: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+main .content-3 .item div img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+main .content-3 .item div .new-arrival {
+  position: absolute;
+  top: 0;
+  border: 0.1rem solid white;
+  background-color: white;
+  padding: 0.2rem;
+}
+main .content-3 .item div .discount {
+  color: red;
+}
+main .content-3 .item div .shop-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  display: none;
+  cursor: pointer;
+  gap: 1rem;
+}
+main .content-3 .item div .shop-container .add-to-cart {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.2rem 0;
+}
+main .content-3 .item div .shop-container .buy-now {
+  border: 1px solid white;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 100%;
+}
+main .content-3 .item div .item-details {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+main .content-3 .item div .item-details .price {
+  color: red;
+  font-weight: 600;
+}
+main .content-3 .item div:hover .shop-container {
+  display: block;
+}
+main .content-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+main .content-4 .left {
+  border: 0.1rem solid rgb(222, 102, 54);
+  border-radius: 1rem;
+  height: 75vh;
+  width: 75%;
+  background-color: rgb(222, 102, 54);
+}
+main .content-4 .left .statement {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .content-4 .left h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  padding: 0.5rem 3.5rem;
+  padding-bottom: 8rem;
+  font-weight: 900;
+}
+main .content-4 .left hr {
+  border: 1px solid black;
+}
+main .content-4 .left p, main .content-4 .left h3 {
+  padding: 0.5rem;
+}
+main .content-4 .left h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .content-4 .left .icon {
+  border: 1px solid white;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+main .content-4 .left .icon img {
+  max-width: 100%;
+}
+main .content-4 .left p {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+main .content-4 img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 1rem;
+  filter: grayscale(100%);
+}
+
+footer {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  background-color: black;
+}
+footer .logo {
+  max-width: 50%;
+}
+footer div {
+  border: 1px solid black;
+}
+footer div h3 {
+  color: white;
+  font-weight: 600;
+}
+footer div nav {
+  display: flex;
+  flex-direction: column;
+}
+footer div nav a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
