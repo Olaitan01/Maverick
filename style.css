@@ -52,9 +52,22 @@ header .header-top .header-right {
 }
 header .header-top .header-right span {
   padding: 0 0.2rem;
+  position: relative;
 }
 header .header-top .header-right span img {
   max-width: 80%;
+  cursor: pointer;
+}
+header .header-top .header-right span .cart-num {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+header .header-top .header-right span .show-cart {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 header .header-top .cart-list {
   border: 0.1rem solid black;
@@ -65,24 +78,35 @@ header .header-top .cart-list {
   z-index: 1;
   right: 5rem;
   top: 5rem;
+  display: none;
 }
 header .header-top .cart-list h2 {
   text-align: center;
   text-transform: uppercase;
 }
+header .header-top .cart-list .cart-empty {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
 header .header-top .cart-list .cart-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 0.5rem;
 }
 header .header-top .cart-list .cart-row .item-details {
   display: flex;
   flex-direction: column;
 }
-header .header-top .cart-list .cart-row img {
-  max-width: 50%;
+header .header-top .cart-list .cart-row .item-image {
+  width: 100px;
   border-radius: 0.5rem;
+}
+header .header-top .cart-list .cart-row .quantity-input {
+  width: 20%;
 }
 header .header-hero {
   display: grid;
@@ -291,6 +315,7 @@ main .content-3 .item div .shop-container .add-to-cart {
   padding: 0.5rem;
   width: 100%;
   margin: 0.2rem 0;
+  cursor: pointer;
 }
 main .content-3 .item div .shop-container .buy-now {
   border: 1px solid white;
@@ -300,6 +325,7 @@ main .content-3 .item div .shop-container .buy-now {
   font-weight: 600;
   padding: 0.5rem;
   width: 100%;
+  cursor: pointer;
 }
 main .content-3 .item div .item-details {
   display: flex;
