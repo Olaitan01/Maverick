@@ -42,14 +42,6 @@ for (let i = 0; i < addToCartBtn.length; i++) {
 function itemAddedToCart(priceEl, titleEl, img) {
   let itemsContainer = document.createElement("div");
   itemsContainer.classList.add("cart-row");
-  let cartRow = document.getElementsByClassName("cart-row");
-  let itemTitle = document.getElementsByClassName("item-title");
-  for (let i = 0; i < cartRow.length; i++) {
-    if (itemTitle[i].innerText === titleEl) {
-      alert("Item already Added");
-      return;
-    }
-  }
   itemsContainer.innerHTML = `   <div class="cart-row">
     <span
     ><img src="${img}" alt="leather jacket" class="item-image"
