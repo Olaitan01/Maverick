@@ -6,6 +6,23 @@ let cartTotal = document.querySelector(".cart-total");
 let price = document.getElementsByClassName("item-price");
 let quantity = document.getElementsByClassName("quantity-input");
 let cartNum = document.querySelector(".cart-num");
+const menuBtn=document.querySelector(".menu-btn")
+let closeBtn=document.querySelector(".close-menu")
+let openBtn=document.querySelector(".open-menu")
+let menuNav=document.querySelector(".navs")
+
+/**MOBILE MENU */
+menuBtn.addEventListener("click",()=>{
+  if(menuNav.style.top=="-50%"){
+    closeBtn.style.display="none"
+    openBtn.style.display="block"
+    menuNav.style.top="-50%";
+  }else{
+    closeBtn.style.display="block"
+    openBtn.style.display="none"
+    menuNav.style.top="1%";
+  }
+})
 
 /**Cart num indicator */
 let num = 0;

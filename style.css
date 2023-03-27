@@ -421,4 +421,102 @@ footer div nav a {
   color: white;
   padding: 0.5rem;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  header .navs {
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    top: -50%;
+    animation: top 0.2s ease-in-out;
+  }
+  header .navs nav {
+    flex-direction: column;
+  }
+  header .navs nav a {
+    color: black;
+    padding: 0.5rem;
+  }
+  header .menu-btn {
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  header .menu-btn img {
+    max-width: 80%;
+  }
+  header .menu-btn .close-menu {
+    display: none;
+  }
+  header .header-hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header .header-hero .hero-1 {
+    display: none;
+  }
+  header .header-hero .hero-2 {
+    grid-column: 1/span 2;
+  }
+  header .header-hero .hero-2 h1 {
+    font-size: 3rem;
+  }
+  header .header-hero .hero-2 p {
+    font-size: 1rem;
+  }
+  main .content-1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+    font-weight: 400px;
+  }
+  main .content-3 .item {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  main .content-3 .item .new-arrival {
+    font-size: 0.7rem;
+  }
+  main .content-3 .item .shop-container {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    position: initial;
+    display: block;
+    gap: 0.5rem;
+  }
+  main .content-3 .item .item-details {
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+  main .content-3:hover .shop-container {
+    display: initial;
+  }
+  main .content-4 {
+    flex-direction: column-reverse;
+  }
+  main .content-4 .left {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  main .content-4 .left h1 {
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem 10rem;
+    text-align: left;
+  }
+  main .content-4 .left h3 {
+    font-size: 1rem;
+    font-weight: 600px;
+  }
+  main .content-4 .left p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400px;
+  }
+  footer h3 {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
